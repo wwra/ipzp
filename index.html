@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IPZP</title>
+<meta charset=utf8 />
+<style type=text/css>*{box-sizing:border-box}html,body{height:100%;width:100%;padding:0;margin:0;overflow:hidden;font-family:Lucida Console,Monaco,monospace}.page{height:100%;background-color:#584e4a}.content{height:200%;-webkit-transform-origin:top left;transform-origin:top left;-webkit-transition:-webkit-transform .7s cubic-bezier(1,.005,.24,1);transition:-webkit-transform .7s cubic-bezier(1,.005,.24,1);transition:transform .7s cubic-bezier(1,.005,.24,1);transition:transform .7s cubic-bezier(1,.005,.24,1),-webkit-transform .7s cubic-bezier(1,.005,.24,1);background-color:#f0f0f0}.content_inner{height:50%}.menu_toggle{z-index:900;position:fixed;top:0;left:0;display:block;cursor:pointer;width:100px;height:80px;background-color:#f37272;border-bottom-right-radius:100%}.menu_toggle:active i{opacity:.8;-ms-filter:"alpha(opacity=80)"}.menu_toggle i{color:#f0f0f0}.menu_toggle .menu_open,.menu_toggle .menu_close{position:absolute;top:50%;left:50%;margin-top:-15px;margin-left:-12px;-webkit-transition:-webkit-transform .7s cubic-bezier(1,.005,.24,1);transition:-webkit-transform .7s cubic-bezier(1,.005,.24,1);transition:transform .7s cubic-bezier(1,.005,.24,1);transition:transform .7s cubic-bezier(1,.005,.24,1),-webkit-transform .7s cubic-bezier(1,.005,.24,1)}.menu_toggle .menu_open{-webkit-transform-origin:-100px -100px;transform-origin:-100px -100px}.menu_toggle .menu_close{-webkit-transform:rotate(20deg);transform:rotate(20deg);-webkit-transform-origin:-100px -160px;transform-origin:-100px -160px}.menu_items{position:fixed;bottom:0;left:50px;list-style-type:none;margin:0;padding:0}.menu_items li{height:60px;margin-bottom:30px;-webkit-transform:translateX(-300px);transform:translateX(-300px);-webkit-transition:-webkit-transform .7s 0s cubic-bezier(1,.005,.24,1);transition:-webkit-transform .7s 0s cubic-bezier(1,.005,.24,1);transition:transform .7s 0s cubic-bezier(1,.005,.24,1);transition:transform .7s 0s cubic-bezier(1,.005,.24,1),-webkit-transform .7s 0s cubic-bezier(1,.005,.24,1)}.menu_items li:nth-child(2){margin-left:40px}.menu_items li:nth-child(3){margin-left:80px}.menu_items li:nth-child(4){margin-left:120px}.menu_items a{display:block;text-decoration:none;text-transform:uppercase;letter-spacing:2px;color:#a3a3a3;-webkit-transition:color .2s;transition:color .2s}.menu_items a .icon{position:relative;display:inline-block;margin-right:25px;color:#f0f0f0}.menu_items a .icon:after{position:absolute;top:50%;left:50%;content:'';display:block;width:60px;height:60px;margin-left:-33px;margin-top:-32px;border-radius:100%;border:2px solid #f0f0f0;-webkit-transition:border-color .2s;transition:border-color .2s}.menu_items a:hover{color:#f0f0f0}.menu_items a:hover .icon:after{border-color:#f37272}.menu_items a:active .icon{color:#f37272}.shazam .content{-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}.shazam .menu_open{-webkit-transform:rotate(-20deg);transform:rotate(-20deg)}.shazam .menu_close{-webkit-transform:rotate(0);transform:rotate(0)}.shazam .menu_items li{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transition:-webkit-transform .35s .45s cubic-bezier(.175,.885,.32,1.275);transition:-webkit-transform .35s .45s cubic-bezier(.175,.885,.32,1.275);transition:transform .35s .45s cubic-bezier(.175,.885,.32,1.275);transition:transform .35s .45s cubic-bezier(.175,.885,.32,1.275),-webkit-transform .35s .45s cubic-bezier(.175,.885,.32,1.275)}.shazam .menu_items li:nth-child(2){-webkit-transition-delay:.47s;transition-delay:.47s}.shazam .menu_items li:nth-child(3){-webkit-transition-delay:.48s;transition-delay:.48s}.shazam .menu_items li:nth-child(4){-webkit-transition-delay:.49s;transition-delay:.49s}h1{padding-bottom:15px;border-bottom:1px solid #ddd}body{color:#584e4a}.open:after{content:"\2630"}.close:after{content:"\2716"}.shedule:before{content:"\2FD5"}.links:before{content:"\269B"}.oop:before{content:"\2609"}.hypertext:before{content:"\2608"}.white{color:white}iframe{height:100%;width:100%;overflow:hidden;border:0}</style>
+</head>
+<body>
+<div class=page>
+<span class=menu_toggle>
+<span class="menu_open open white"></span>
+<span class="menu_close close white"></span>
+</span>
+<ul class=menu_items>
+<li><a onclick="setURL('./links.html')"><span class="icon links"></span> Links</a></li>
+<li><a onclick="setURL('./teachers.html')"><span class="icon hypertext"></span> Teachers</a></li>
+</ul>
+<main class=content>
+<div class=content_inner>
+<iframe id=iframe src=./links.html></iframe>
+</div>
+</main>
+</div>
+<script type=text/javascript>var page=document.querySelector(".page");var toggle=document.querySelector(".menu_toggle");var content=document.querySelector(".content");toggle.addEventListener("click",function(){page.classList.toggle("shazam")});content.addEventListener("click",function(){page.classList.remove("shazam")});function setURL(a){document.querySelector("#iframe").src=a};</script>
+</body>
+</html>
